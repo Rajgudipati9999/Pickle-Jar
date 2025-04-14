@@ -1,6 +1,14 @@
 .nav-header {
     height: 30%;
     color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.menu-icon {
+    font-size: 40px;
+    color: #1e8449 ;
 }
 .logo {
     height: 80px;

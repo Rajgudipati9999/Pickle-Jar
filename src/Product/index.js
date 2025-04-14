@@ -1,4 +1,6 @@
 import ProductItem from "../ProductItem";
+import './index.css'
+
 const products = [
   {
     id: 1,
@@ -34,11 +36,14 @@ const products = [
 
 const Product = () => {
   return (
-    <div>
+    <ul className="product-card-list">
+      <div>
+        <input placeholder="Enter Product" type="search" className="product-search"/>
+      </div>
       {products.map((eachItem) => (
         <ProductItem key={eachItem.id} products={eachItem} />
       ))}
-    </div>
+    </ul>
   );
 };
 
